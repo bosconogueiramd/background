@@ -1,0 +1,92 @@
+/* Seu arquivo CSS corrigido */
+
+.section-cinza {
+    background-color: #f3f3f3;
+    padding: 90px;
+    height: 330px; /* Ajuste conforme necessário */
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.section-cinza h1 {
+    font-size: 0.95em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #898686;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.section-cinza h2 {
+    font-size: 3em;
+    font-family: serif;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+
+.section-cinza p {
+    font-size: 1em;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #898686;
+    text-align: center;
+}
+
+.conteudo {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#picture {
+    margin: 0;
+    padding: 0;
+}
+
+#picture img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.section-cinza2 {
+    background-color: #f3f3f3;
+    padding: 90px;
+    height: 300px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.section-cinza2 h2 {
+    font-size: 2em;
+    font-family: serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+
+.section-cinza2 p {
+    font-size: 1em;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #898686;
+    text-align: center;
+    line-height: 150%;
+}

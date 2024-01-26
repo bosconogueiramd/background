@@ -1,0 +1,23 @@
+---
+# Apenas o arquivo Sass principal precisa de front matter (os traços são suficientes)
+---
+
+@import "minima";
+
+/* Adicione os estilos para .fullscreen-image dentro de um @media query */
+@media (min-width: 768px) {
+  .fullscreen-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Adicione estas regras de estilo para tornar a imagem responsiva */
+.site-header .wrapper {
+  height: auto;
+}
+
+.site-header .site-title img {
+  max-width: 100%;
+  height: auto;
+}

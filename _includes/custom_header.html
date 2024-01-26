@@ -1,0 +1,93 @@
+<!-- Conteúdo básico do custom_header.html -->
+<header class="custom-header">
+  <div class="wrapper">
+    <img id="header" class="custom-header-image" src="{{ site.baseurl }}/assets/images/header.png" alt="Header Image">
+  </div>
+</header>
+
+<style>
+  @media (max-width: 3000px) {
+    .custom-header img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+</style>
+
+<script>
+  var isBackground1 = true; // Substitua conforme necessário
+
+  document.addEventListener("DOMContentLoaded", function() {
+    setupImageClick();
+  });
+
+  function setupImageClick() {
+    var headerImage = document.getElementById('header');
+    
+    headerImage.addEventListener('click', function (event) {
+      // Obtém as dimensões naturais da imagem
+      var naturalWidth = headerImage.naturalWidth;
+      var naturalHeight = headerImage.naturalHeight;
+
+      // Obtém as coordenadas do clique relativas à imagem
+      var clickX = event.offsetX === undefined ? event.layerX : event.offsetX;
+      var clickY = event.offsetY === undefined ? event.layerY : event.offsetY;
+
+      // Calcula as coordenadas em relação à largura e altura naturais da imagem
+      var relativeX = (clickX / headerImage.clientWidth) * naturalWidth;
+      var relativeY = (clickY / headerImage.clientHeight) * naturalHeight;
+
+      checkRectangles(relativeX, relativeY);
+    });
+  }
+
+  function checkRectangles(clickX, clickY) {
+    console.log("Clique! Coordenadas:", clickX, clickY);
+
+    var rectangles = [
+      { x: 868, y: 2, width: 220, height: 70 },
+      { x: 1106, y: 2, width: 122, height: 70 },
+      { x: 1232, y: 2, width: 240, height: 70 },
+      { x: 1478, y: 2, width: 276, height: 70 },
+      { x: 1762, y: 2, width: 148, height: 70 },
+      { x: 4, y: 2, width: 266, height: 70 }
+    ];
+
+    for (var i = 0; i < rectangles.length; i++) {
+      var rect = rectangles[i];
+
+      // Verifica se o clique ocorreu dentro de algum dos retângulos
+      if (clickX >= rect.x && clickX <= rect.x + rect.width && clickY >= rect.y && clickY <= rect.y + rect.height) {
+        redirectToPage(i + 1); // Redireciona para a página correspondente (índice + 1)
+        return;
+      }
+    }
+  }
+
+  function redirectToPage(pageNumber) {
+    // Adapte esta lógica conforme necessário para suas URLs específicas
+    switch (pageNumber) {
+      case 1:
+        window.location.href = "{{ site.baseurl }}/modulo-ambulatorial/";
+        break;
+      case 2:
+        window.location.href = "{{ site.baseurl }}/modulo-apac/";
+        break;
+      case 3:
+        window.location.href = "{{ site.baseurl }}/modulo-cirurgia-eletiva/";
+        break;
+      case 4:
+        window.location.href = "{{ site.baseurl }}/modulo-central-de-leitos";
+        break;
+      case 5:
+        window.location.href = "{{ site.baseurl }}/sobre/";
+        break;
+      case 6:
+        window.location.href = "{{ site.baseurl }}/";
+        break;  
+      default:
+        // Tratamento de erro ou redirecionamento padrão, se necessário
+        break;
+    }
+  }
+</script>

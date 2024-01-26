@@ -1,0 +1,45 @@
+/* esqueleto.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display:flow-root;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(246, 195, 128));
+  }
+  
+  #imagemContainer {
+    position:relative;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 100%; /* Largura máxima do contêiner */
+    margin-left: 20%;
+    
+  }
+
+    
+  #circuloAzul {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 2cm;
+    height: 2cm;
+    transition: transform 0.3s ease-in-out;
+    display: none;
+  }
+  
+  #imagemContainer:hover #circuloAzul {
+    display: block;
+    transform: scale(1.1);
+  }
+  
+  .pontoPreto {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  

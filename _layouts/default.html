@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Seus metadados aqui -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <!-- Seus estilos e scripts aqui -->
+  {% if page.url == '/' %}
+    <!-- Adicione estilos ou scripts específicos para a página principal aqui -->
+  {% endif %}
+</head>
+<body>
+
+  {% unless page.url == '/' %}
+    <!-- Seu cabeçalho padrão aqui -->
+    <header>
+      <!-- Conteúdo do cabeçalho -->
+    </header>
+  {% endunless %}
+
+  <!-- Conteúdo da página -->
+  {{ content }}
+
+  {% unless page.url == '/' %}
+    <!-- Seu rodapé padrão aqui -->
+    <footer>
+      <!-- Conteúdo do rodapé -->
+    </footer>
+  {% endunless %}
+
+</body>
+</html>

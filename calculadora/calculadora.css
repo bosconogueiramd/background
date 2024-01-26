@@ -1,0 +1,181 @@
+body {
+  /* Adiciona a imagem de fundo */
+  background-image: url('/assets/images/fundo-apac.png');
+  /* Define como a imagem de fundo deve se comportar */
+  background-size: cover; /* ou 'contain' para ajustar a imagem */
+  background-position: 0% 0%;
+  background-repeat: repeat-y;
+  /* Define a cor de fundo como fallback para browsers que não suportam imagens */
+  background-color: #f1f1f1; /* escolha uma cor que combine com sua imagem */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2 {
+  text-align: center;
+  color: #030303;
+  font-size: 1.5em;
+}
+
+
+h1 {
+  text-align: center;
+  color: #030303;
+  font-size: 1.5em;
+
+} 
+
+p {
+  ttext-align: center;
+  color: #030303;
+  font-size: 1em;
+}
+
+
+.calc-quimio {
+  text-align: center;
+  color: #020202;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 150px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight:700;
+  color: #030303;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .custom-header img {
+    max-width: 100%; /* Limita a largura da imagem a 100% em telas menores que 768 pixels */
+    height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção da imagem */
+  }
+
+  h1 {
+    font-size: 1em; /* Reduz o tamanho do título em telas menores */
+  }
+
+  h2 {
+    font-size: 1em; /* Reduz o tamanho do subtítulo em telas menores */
+  }
+
+  p {
+    font-size: 0.85em; /* Reduz o tamanho do texto em telas menores */
+  }
+
+  .calc-quimio {
+    margin: 20px auto; /* Ajusta a margem do bloco de calculadora em telas menores */
+  }
+
+  #result,
+  #horasFaltantes {
+    font-size: 0.5em; /* Reduz o tamanho do texto de resultado em telas menores */
+  }
+  
+  #horaAtual {
+    font-size: 0.5em;
+  }
+}
+
+
+#horaAtual,
+#horasFaltantes {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: #030303;
+  font-size: 0.85em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* RETIFICOU O CUSTOM_HEADER.HTML */
+.custom-header img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner pai */
+  height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção da imagem */
+  display: block; /* Remove espaçamento extra abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem dentro do contêiner pai */
+}
+
+/* Para se ajustar a telas menores */ 
+@media (max-width: 1000px) {
+  .custom-header img {
+    max-width: 100%; /* Limita a largura da imagem a 100% em telas menores que 768 pixels */
+    height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção da imagem */
+  }
+
+  h1 {
+    font-size: 1em; /* Reduz o tamanho do título em telas menores */
+  }
+
+  h2 {
+    font-size: 1em; /* Reduz o tamanho do subtítulo em telas menores */
+  }
+
+  p {
+    font-size: 0.85em; /* Reduz o tamanho do texto em telas menores */
+  }
+
+  .calc-quimio {
+    margin: 20px auto; /* Ajusta a margem do bloco de calculadora em telas menores */
+  }
+
+  #result,
+  #horasFaltantes {
+    font-size: 0.5em; /* Reduz o tamanho do texto de resultado em telas menores */
+  }
+  
+  #horaAtual {
+    font-size: 0.5em;
+  }
+}

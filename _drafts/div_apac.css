@@ -1,0 +1,84 @@
+.quimio {
+
+    background-color: #ccc1c1; /* Cor de fundo cinza */
+    padding: 75px; /* Espaçamento interno */
+    height: 300px; /* Altura da seção cinza, ajuste conforme necessário */
+    margin-left: -20px;
+    margin-right: -20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    .quimio h1 {
+      font-size: 0.95em;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      letter-spacing: 3px;
+      font-weight: 400;
+      color: #898686; /* Cor do texto branco, ajuste conforme necessário */
+      text-align: center;
+      margin-top: 5px;
+      
+        
+    }
+    
+  
+    .quimio h2 {
+      font-size: 3em;
+      font-family: serif;
+      letter-spacing: 0px;
+      font-weight: 500;
+      color: #000000; /* Cor do texto branco, ajuste conforme necessário */
+      text-align: center;
+        
+        
+    }
+  
+    .quimio p {
+      font-size: 1em;
+      font-family: 'Sofia Pro', sans-serif;
+      color: #898686; /* Cor do texto branco, ajuste conforme necessário */
+      text-align: center;
+    }
+    
+  
+  .conteudo-quimio {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0px auto; /* Centraliza o conteúdo na página */
+    background-color: #a9cae3; /* Cor de fundo cinza */
+    padding: 75px; /* Espaçamento interno */
+    height: 300px; /* Altura da seção cinza, ajuste conforme necessário */
+    margin-left: -20px;
+    margin-right: -20px; 
+    
+  }
+  
+  .conteudo-quimio h1 {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0px auto; /* Centraliza o conteúdo na página */
+    background-color: #ffffff; /* Cor de fundo cinza */
+    padding: 75px; /* Espaçamento interno */
+    height: 300px; /* Altura da seção cinza, ajuste conforme necessário */
+    margin-left: -20px;
+    margin-right: -20px;
+        
+    }
+    
+  
+    .conteudo-quimio h2 {
+      font-size: 3em;
+      font-family: serif;
+      letter-spacing: 0px;
+      font-weight: 500;
+      color: #000000; /* Cor do texto branco, ajuste conforme necessário */
+      text-align: center;
+        
+        
+    }
+  
+    .conteudo-quimio p {
+      font-size: 1em;
+      font-family: 'Sofia Pro', sans-serif;
+      color: #898686; /* Cor do texto branco, ajuste conforme necessário */
+      text-align: center;
+    }

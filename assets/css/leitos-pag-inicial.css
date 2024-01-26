@@ -1,0 +1,116 @@
+/* leitos-pag-inicial.css */
+
+.trauma {
+    background-color: rgb(241, 241, 241);
+    padding: 80px; /* Adicione algum espaço interno para que o conteúdo seja visível */
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.trauma h1 {
+    font-size: 0.95em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #898686;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.trauma h2 {
+    font-size: 3em;
+    font-family: serif;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+
+.trauma p {
+    font-size: 1em;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #898686;
+    text-align: center;
+}
+
+.conteudotrauma {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+/* Adicione isso ao seu arquivo CSS */
+
+.center-text {
+    text-align: center; /* Centraliza o texto */
+    padding: 60px; /* Ajuste o padding conforme necessário */
+}
+
+.center-text h1 {
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.center-text p {
+    font-size: 1em;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #898686;
+    text-align: center;
+}
+
+.trauma {
+    background-color: rgb(241, 241, 241);
+    padding: 80px; /* Adicione algum espaço interno para que o conteúdo seja visível */
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.nt-trauma {
+    background-color:	#ADD8E6;
+    padding: 80px; /* Adicione algum espaço interno para que o conteúdo seja visível */
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.nt-conteudotrauma {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.nt-conteudotrauma a {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.nt-conteudotrauma h1 {
+    font-size: 0.95em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.nt-conteudotrauma h2 {
+    font-size: 2em;
+    font-family: serif;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #747474;
+    text-align: center;
+}
+
+.nt-conteudotrauma p {
+    font-size: 1em;
+    font-family: 'Sofia Pro', sans-serif;
+    color: #999999;
+    text-align: center;
+}
+

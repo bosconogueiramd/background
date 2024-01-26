@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <title>Homepage</title>
+</head>
+<body>
+
+<div class="homepage-container">
+  <img id="background-image" src="{{ site.baseurl }}/assets/images/background.png" alt="Imagem da Homepage" class="fullscreen-image" style="max-width: 100%;" onload="initImage()" onclick="checkClick(event)">
+</div>
+
+<script>
+  var isBackground1 = true;
+  var imageWidth, imageHeight;
+
+  function initImage() {
+    var backgroundImage = document.getElementById('background-image');
+    imageWidth = backgroundImage.naturalWidth;
+    imageHeight = backgroundImage.naturalHeight;
+  }
+
+  function checkClick(event) {
+    // Certifique-se de que as dimensões da imagem foram inicializadas
+    if (!imageWidth || !imageHeight) {
+      return;
+    }
+
+    var backgroundImage = document.getElementById('background-image');
+
+    // Coordenadas do retângulo vermelho na imagem (proporcionais ao tamanho real)
+    var rectX = 786 / imageWidth;
+    var rectY = 548 / imageHeight;
+    var rectWidth = 162 / imageWidth;
+    var rectHeight = 70 / imageHeight;
+
+    // Coordenadas do clique dentro do contêiner
+    var clickX = (event.clientX - backgroundImage.getBoundingClientRect().left) / backgroundImage.clientWidth;
+    var clickY = (event.clientY - backgroundImage.getBoundingClientRect().top) / backgroundImage.clientHeight;
+
+    console.log('Clique em X:', clickX, ' Clique em Y:', clickY);
+
+    // Verifica se o clique ocorreu dentro do retângulo principal
+    if (clickX >= rectX && clickX <= rectX + rectWidth && clickY >= rectY && clickY <= rectY + rectHeight) {
+      changeBackground();
+    }
+
+    // continua aqui para a lógica do header - links retangulares
+    var rectangles = [
+      { x: 889 / imageWidth, y: 30 / imageHeight, width: 197 / imageWidth, height: 54 / imageHeight },
+      { x: 1120 / imageWidth, y: 30 / imageHeight, width: 108 / imageWidth, height: 54 / imageHeight },
+      { x: 1252 / imageWidth, y: 30 / imageHeight, width: 222 / imageWidth, height: 54 / imageHeight },
+      { x: 1501 / imageWidth, y: 30 / imageHeight, width: 246 / imageWidth, height: 54 / imageHeight },
+      { x: 1793 / imageWidth, y: 30 / imageHeight, width: 50 / imageWidth, height: 54 / imageHeight }
+    ];
+
+    for (var i = 0; i < rectangles.length; i++) {
+      var rect = rectangles[i];
+
+      // Verifica se o clique ocorreu dentro de algum dos retângulos
+      if (clickX >= rect.x && clickX <= rect.x + rect.width && clickY >= rect.y && clickY <= rect.y + rect.height) {
+        redirectToPage(i + 1); // Redireciona para a página correspondente (índice + 1)
+        return;
+      }
+    }
+  }
+
+  function changeBackground() {
+    var backgroundImage = document.getElementById('background-image');
+
+    isBackground1 = !isBackground1;
+
+    if (isBackground1) {
+      backgroundImage.src = "{{ site.baseurl }}/assets/images/background.png";
+    } else {
+      backgroundImage.src = "{{ site.baseurl }}/assets/images/background2.png";
+    }
+  }
+
+  function redirectToPage(pageNumber) {
+    // Adapte esta lógica conforme necessário para suas URLs específicas
+    switch (pageNumber) {
+      case 1:
+        window.location.href = "{{ site.baseurl }}/modulo-ambulatorial/";
+        break;
+      case 2:
+        window.location.href = "{{ site.baseurl }}/modulo-apac/";
+        break;
+      case 3:
+        window.location.href = "{{ site.baseurl }}/modulo-cirurgia-eletiva/";
+        break;
+      case 4:
+        window.location.href = "{{ site.baseurl }}/modulo-central-de-leitos";
+        break;
+      case 5:
+        window.location.href = "{{ site.baseurl }}/sobre/";
+        break;
+      default:
+        // Tratamento de erro ou redirecionamento padrão, se necessário
+        break;
+    }
+  }
+</script>
+
+</body>
+</html>

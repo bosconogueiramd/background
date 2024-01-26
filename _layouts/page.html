@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ... outros cabeçalhos ... -->
+  {% if page.css %}
+    {% for css_file in page.css %}
+      <link rel="stylesheet" href="{{ css_file | relative_url }}">
+    {% endfor %}
+  {% endif %}
+</head>
+
+<body>
+  {% include custom_header.html %}
+  {{ content }}
+</body>
+
+</html>

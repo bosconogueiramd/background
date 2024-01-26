@@ -1,0 +1,64 @@
+.imagem-clicavel {
+    cursor: pointer;
+}
+
+.animacao-tremer {
+    animation: tremer 0.5s ease-in-out;
+}
+
+@keyframes tremer {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(5px, 0); }
+}
+
+table {
+    width: 10%;
+     border-collapse: collapse;
+     margin-top: 20px;
+     font-family: Arial, sans-serif; /* Escolha uma fonte */
+     font-size: 12px; /* Tamanho da fonte */
+   }
+
+   th, td {
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: left;
+   }
+
+   th {
+     background-color: #f2f2f2;
+   }
+ 
+   /* Estilo para a div de explicação lateral */
+   .painel-stickers {
+       display: flex; /* Usa um layout flexível para colocar os itens lado a lado */
+       gap: 20px; /* Espaçamento entre os itens */
+   }
+
+   #imagem-container {
+       width: 30%; /* Define a largura da imagem para ocupar metade do contêiner pai */
+   }
+
+   img {
+       max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+   }
+
+   table {
+       width: 70%; /* Define a largura da tabela para ocupar metade do contêiner pai */
+       border-collapse: collapse;
+       font-family: Arial, sans-serif; /* Escolha uma fonte */
+       font-size: 12px; /* Tamanho da fonte */
+   }
+
+   th, td {
+       border: 1px solid #ddd;
+       padding: 8px;
+       text-align: left;
+   }
+
+   th {
+       background-color: #f2f2f2;
+   }
